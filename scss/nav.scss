@@ -1,9 +1,42 @@
 nav {
-  // test stuff, can delete
-  height: 40px;
+  min-height: 90px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: tan;
+  justify-content: space-between;
+
+  .logo {
+    min-height: 55px;
+    width: 167px;
+    margin-left: 50px;
+  }
+
+  .links {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 50px;
+
+    a {
+      text-decoration: none;
+      font-family: "Caveat-Regular";
+      font-size: 25px;
+      color: #000;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #000;
+    }
+
+    .login {
+      height: 50px;
+      width: 150px;
+      border-radius: 25px;
+      background-color: #ffd972;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
 }
