@@ -47,6 +47,10 @@ nav .logo {
   width: 167px;
   margin-left: 50px;
 }
+nav .logo img {
+  min-height: 55px;
+  width: 167px;
+}
 nav .links {
   width: 550px;
   display: flex;
@@ -126,7 +130,7 @@ footer .right img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,7 +181,7 @@ footer .right img {
   justify-content: space-evenly;
   position: absolute;
   top: 10%;
-  right: 32%;
+  right: 30%;
 }
 .home-wrapper .home-circle-two .circle-two-text-container {
   min-height: 80px;
@@ -192,6 +196,13 @@ footer .right img {
   font-family: "Lato-Italic";
   font-size: 10px;
   text-align: center;
+}
+
+@media screen and (width: 1920px) {
+  .home-wrapper .home-circle-two {
+    top: 27vh;
+    right: 65vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

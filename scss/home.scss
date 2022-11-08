@@ -4,7 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.6),
+      rgba(242, 92, 84, 0.6)
+    ),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,7 +63,7 @@
     justify-content: space-evenly;
     position: absolute;
     top: 10%;
-    right: 32%;
+    right: 30%;
 
     .circle-two-text-container {
       min-height: 80px;
@@ -77,3 +82,13 @@
     }
   }
 }
+
+// this media query is to fix the second circles position when it comes to a different resolution
+@media screen and (width: 1920px) {
+  .home-wrapper {
+    .home-circle-two {
+      top: 27vh;
+      right: 65vh;
+    }
+  }
+} ;
