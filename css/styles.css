@@ -27,6 +27,14 @@ p {
   font-family: "Lato-Italic";
   src: url("/fonts/Lato-Italic.ttf");
 }
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Caveat-Bold";
+  src: url("/fonts/Caveat-Bold.ttf");
+}
 nav {
   min-height: 90px;
   width: 100%;
@@ -66,11 +74,13 @@ nav .links .login {
 }
 
 footer {
-  min-height: 20px;
+  min-height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 90%;
 }
 footer .left {
   min-height: 50px;
@@ -111,16 +121,77 @@ footer .right img {
 }
 
 .home-wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.home-wrapper .home-hero {
-  min-height: 100%;
-  width: 100%;
+.home-wrapper .home-circle-one {
+  min-height: 350px;
+  width: 350px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-color: #ffd972;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 999;
 }
-.home-wrapper .home-hero img {
-  min-height: 100%;
-  width: 100%;
+.home-wrapper .home-circle-one .circle-text-container {
+  min-height: 200px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home-wrapper .home-circle-one .circle-text-container .circle-one-txt {
+  font-family: "Caveat-Bold";
+  font-size: 24px;
+}
+.home-wrapper .home-circle-one .circle-text-container .circle-one-txt-two {
+  font-family: "Lato-Regular";
+  font-size: 13px;
+  text-align: center;
+}
+.home-wrapper .home-circle-two {
+  min-height: 170px;
+  width: 170px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-color: #fcbcb8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 10%;
+  right: 32%;
+}
+.home-wrapper .home-circle-two .circle-two-text-container {
+  min-height: 80px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.home-wrapper .home-circle-two .circle-two-txt {
+  font-family: "Lato-Italic";
+  font-size: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

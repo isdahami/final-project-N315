@@ -1,14 +1,79 @@
 .home-wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  .home-circle-one {
+    min-height: 350px;
+    width: 350px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #ffd972;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 999;
 
-  .home-hero {
-    min-height: 100%;
-    width: 100%;
+    .circle-text-container {
+      min-height: 200px;
+      width: 150px;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
 
-    img {
-      min-height: 100%;
-      width: 100%;
+      .circle-one-txt {
+        font-family: "Caveat-Bold";
+        font-size: 24px;
+      }
+
+      .circle-one-txt-two {
+        font-family: "Lato-Regular";
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+  .home-circle-two {
+    min-height: 170px;
+    width: 170px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #fcbcb8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10%;
+    right: 32%;
+
+    .circle-two-text-container {
+      min-height: 80px;
+      width: 100px;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .circle-two-txt {
+      font-family: "Lato-Italic";
+      font-size: 10px;
+      text-align: center;
     }
   }
 }
