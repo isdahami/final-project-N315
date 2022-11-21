@@ -1,20 +1,22 @@
 /* footer  stuff */
-#footer{
+#footer {
   min-height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position:fixed;
-  top: 90%;  
-   z-index: 5;
-  bottom: 60px;
-  right: 0;
-  left: 0;
-  /* clear: both; */
-  /* background-color: #fcbcb8;  */
-}
 
+  // works on home page but not on browse
+  position: fixed;
+  bottom: 0;
+
+  // position: fixed;
+  // top: 90%;
+  // z-index: 5;
+  // bottom: 60px;
+  // right: 0;
+  // left: 0;
+}
 
 #footer .left {
   min-height: 50px;

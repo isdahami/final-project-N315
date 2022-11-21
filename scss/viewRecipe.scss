@@ -1,0 +1,200 @@
+.viewRep-wrapper {
+  min-height: 100%;
+  width: 100%;
+  //   background-color: red;
+
+  .lr-container {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // background-color: purple;
+
+    .left-viewRep {
+      min-height: 420px;
+      width: 50%;
+      //   background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .left-txt {
+        font-family: "Lato-Black";
+        font-size: 25px;
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+        margin-left: 160px;
+      }
+
+      img {
+        min-height: 400px;
+        width: 450px;
+      }
+    }
+    .right-viewRep {
+      min-height: 420px;
+      width: 50%;
+      //   background-color: grey;
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      justify-content: space-evenly;
+      margin-left: 50px;
+
+      .right-txt-one {
+        font-family: "Lato-Black";
+        font-size: 25px;
+      }
+      .right-txt-two {
+        width: 300px;
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .right-txt-three {
+        font-family: "Lato-Black";
+        font-size: 20px;
+      }
+      .right-txt-four {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .right-txt-five {
+        font-family: "Lato-Black";
+        font-size: 20px;
+      }
+      .right-txt-six {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+    }
+  }
+  .ingred-container {
+    min-height: 300px;
+    width: 50%;
+    // background-color: yellow;
+    .ingred-head {
+      min-height: 40px;
+      width: 100%;
+      margin-left: 190px;
+      //   background-color: purple;
+
+      .head-txt {
+        font-family: "Lato-Black";
+        font-size: 25px;
+      }
+    }
+    .ingred-list {
+      min-height: 210px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin-top: 35px;
+      margin-left: 190px;
+      //   background-color: red;
+
+      .ingred-txt-one {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-two {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-three {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-four {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-five {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-six {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-seven {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .ingred-txt-eight {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+    }
+  }
+  .instruction-container {
+    min-height: 300px;
+    width: 50%;
+    margin-top: 58px;
+    // background-color: yellow;
+    .instruction-head {
+      min-height: 40px;
+      width: 100%;
+      margin-left: 190px;
+      //   background-color: purple;
+
+      .head-txt {
+        font-family: "Lato-Black";
+        font-size: 25px;
+      }
+    }
+    .instruction-list {
+      min-height: 210px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin-top: 35px;
+      margin-left: 190px;
+      //   background-color: red;
+
+      .instruction-txt-one {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .instruction-txt-two {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .instruction-txt-three {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .instruction-txt-four {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+      .instruction-txt-five {
+        font-family: "Caveat-Regular";
+        font-size: 20px;
+      }
+
+      .edit-btn {
+        border-radius: 25px;
+        background-color: #ffd972;
+        border: none;
+        color: #000;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-family: "Caveat-Regular";
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .empty {
+    min-height: 150px;
+  }
+}
