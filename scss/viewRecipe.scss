@@ -4,6 +4,7 @@
   //   background-color: red;
 
   .lr-container {
+    margin-top: 100px;
     min-height: 500px;
     width: 100%;
     display: flex;
@@ -13,8 +14,8 @@
 
     .left-viewRep {
       min-height: 420px;
-      width: 50%;
-      //   background-color: aqua;
+      width: 100%;
+      // background-color: aqua;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -31,12 +32,14 @@
       img {
         min-height: 400px;
         width: 450px;
+        object-fit: cover;
+        overflow: hidden;
       }
     }
     .right-viewRep {
       min-height: 420px;
-      width: 50%;
-      //   background-color: grey;
+      width: 100%;
+      // background-color: grey;
       display: flex;
       flex-direction: column;
       //   align-items: center;
@@ -196,5 +199,81 @@
 
   .empty {
     min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .viewRep-wrapper {
+    .lr-container {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // background-color: purple;
+      .left-viewRep {
+      }
+      .right-viewRep {
+        // background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .viewRep-wrapper {
+    .lr-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 50%;
+      .left-viewRep {
+        margin-top: 150px;
+        width: 100%;
+        // background-color: red;
+        .left-txt {
+          margin: 0 0;
+        }
+
+        img {
+          min-height: 300px;
+          width: 350px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+      .right-viewRep {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .ingred-container {
+      width: 50%;
+
+      // background-color: aqua;
+      .ingred-list {
+        min-height: 210px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        //   background-color: red;
+      }
+    }
   }
 }
