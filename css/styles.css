@@ -565,6 +565,10 @@ nav .links .login {
   font-family: "Caveat-Regular";
   cursor: pointer;
 }
+.yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-img .view-btn .view-btn-link {
+  text-decoration: none;
+  color: #000;
+}
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-img .edit-btn {
   position: absolute;
   top: 110%;

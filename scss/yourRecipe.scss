@@ -67,6 +67,11 @@
           font-size: 20px;
           font-family: "Caveat-Regular";
           cursor: pointer;
+
+          .view-btn-link {
+            text-decoration: none;
+            color: #000;
+          }
         }
         .edit-btn {
           position: absolute;
