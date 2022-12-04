@@ -5,13 +5,20 @@ function route() {
     let hashTag = window.location.hash;
     // replaces hashtag with nothing
     let pageID = hashTag.replace("#", "");
+    let pageIDArray = pageID.split("/");
+    pageID = pageIDArray[0];
+    let subPageID = pageIDArray[1];
 
     // if there's nothing in the URL then it passes in 'home'
     if(pageID == "") {
         MODEL.changePage("home");
     } else {
-        MODEL.changePage(pageID);
-    }
+        if(pageID == subPageID) {
+            MODEL.changePage(pageID);
+        } else {
+            MODEL.changePage(pageID, subPageID);
+        }
+    };
 }
 
 function initApp() {

@@ -1,0 +1,128 @@
+/* browse stuff */
+.browse-wrapper {
+    min-height: 100vh;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/browse/recipe-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+  }
+  
+  .browse-container {
+    margin-top: 189px;
+    margin-bottom: 103px;
+    z-index: 1;
+    margin-right: 73.91px;
+    
+  }
+  
+  .browse-recipe-title {
+    font-family: "Lato-Regular";
+    
+    font-size: 25px;
+    width: 360px;
+    margin-left: 107px ;
+    margin-bottom: 52px;
+    font-weight: 900;
+  
+  }
+  /* top row with pizza, burger, and white boxes */
+  .browse-box-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 107px ;
+  }
+  /* bottom row with rice, noodles, and white boxes */
+  .browse-box-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 107px ;
+  }
+  .browse-box-one {
+    width: 524px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .browse-box-two {
+    width: 524px;
+    padding-left: 50.91px;
+    margin-right: 73.91px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+  }
+  .browse-box-container-one img {
+    min-height: 50px;
+    height: 263px;
+    width: 300px;
+   
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    
+  }
+  
+  .browse-box-container-two {
+    height: 263px;
+    min-width: 224px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 24px;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+    
+  }
+  .browse-box-two-txt-title {
+    
+    margin-bottom: 21px;
+    border-bottom:  3px  solid #000000;
+  }
+  
+  #para-one, #para-two, #para-three, #para-four  {
+  width: 169px;
+  height: 77px;
+  font-size: 9px;
+  }
+  
+  
+  
+  .browse-icon-one, img {
+    min-width: 60px;
+    margin-bottom: 12px;
+    height: 24.46px;
+    font-size: 9px;
+    font-family: "Lato-Regular";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fcbcb8; */
+  }
+  

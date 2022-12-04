@@ -1,0 +1,217 @@
+.yourRecipe-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(
+      to right,
+      rgba(167, 232, 189, 0.6),
+      rgba(167, 232, 189, 0.6)
+    ),
+    url(../images/browse/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  .yR-wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+
+    .yR-head {
+      min-height: 50px;
+      width: 80%;
+      margin-top: 150px;
+      // background-color: red;
+      .yR-head-txt {
+        font-family: "Caveat-Bold";
+        font-size: 25px;
+      }
+    }
+
+    .yR-recipe-container {
+      display: flex;
+      align-items: center;
+
+      min-height: 400px;
+      width: 80%;
+
+      // background-color: yellow;
+
+      .yR-img {
+        position: relative;
+        img {
+          min-height: 260px;
+          width: 300px;
+          border-radius: 10%;
+        }
+        .view-btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 25px;
+          background-color: #ffd972;
+          border: none;
+          color: #000;
+          padding: 10px 22px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          font-family: "Caveat-Regular";
+          cursor: pointer;
+
+          .view-btn-link {
+            text-decoration: none;
+            color: #000;
+          }
+        }
+        .edit-btn {
+          position: absolute;
+          top: 110%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+          border-radius: 25px;
+          background-color: #ffd972;
+          border: none;
+          color: #000;
+          padding: 10px 22px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          font-family: "Caveat-Regular";
+          cursor: pointer;
+        }
+        .delete-btn {
+          position: absolute;
+          top: 110%;
+          left: 70%;
+          transform: translate(-50%, -50%);
+          border-radius: 25px;
+          background-color: #ffd972;
+          border: none;
+          color: #000;
+          padding: 10px 22px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          font-family: "Caveat-Regular";
+          cursor: pointer;
+        }
+      }
+
+      .yR-txt-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 260px;
+        width: 300px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        background-color: #fff;
+
+        .yR-txt-one {
+          font-family: "Lato-Black";
+          font-size: 15px;
+          border-bottom: 2px solid #000;
+        }
+        .yR-txt-two {
+          font-family: "Lato-Regular";
+          font-size: 9px;
+          width: 138px;
+        }
+        .yR-txt-three {
+          font-family: "Lato-Regular";
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          img {
+          }
+        }
+        .yR-txt-four {
+          font-family: "Lato-Regular";
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          img {
+          }
+        }
+      }
+    }
+
+    .empty {
+      min-height: 100px;
+      width: 100%;
+      // background-color: purple;
+    }
+  }
+}
+
+// come back to this, still needs work
+@media screen and (max-width: 640px) {
+  .yourRecipe-wrapper {
+    // margin-top: 200px;
+    .yR-wrapper {
+      .yR-head {
+        min-height: 24px;
+        width: 293px;
+        margin: 0 auto;
+        margin-top: 200px;
+        // background-color: purple;
+        .yR-head-txt {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          margin: 0 auto;
+          font-size: 19px;
+        }
+      }
+
+      .yR-recipe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-top: 50px;
+        .yR-img {
+          img {
+            min-height: 150px;
+            width: 298px;
+            border-radius: 10%;
+          }
+          .edit-btn {
+            position: absolute;
+            top: 300%;
+            left: 30%;
+          }
+          .delete-btn {
+            position: absolute;
+            top: 300%;
+            left: 70%;
+          }
+        }
+      }
+
+      .empty {
+        min-height: 200px;
+        width: 0px;
+      }
+    }
+  }
+}
