@@ -164,7 +164,7 @@ nav .links .login {
   }
 }
 /* footer  stuff */
-#/* footer  stuff */
+/* footer  stuff */
 #footer {
   min-height: 50px;
   width: 100%;
@@ -175,7 +175,7 @@ nav .links .login {
   bottom: 0;
 }
 
-#
+
 #footer .left {
   min-height: 50px;
   width: 25%;
@@ -184,14 +184,14 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
-#
+
 #footer .left .foot-txt {
   color: #000;
   font-size: 15px;
   font-family: "Lato-Italic";
 }
 
-#
+
 #footer .mid {
   min-height: 50px;
   width: 55%;
@@ -200,7 +200,7 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
-#
+
 #footer .mid .foot-txt {
   color: #000;
   font-size: 15px;
@@ -209,7 +209,7 @@ nav .links .login {
   margin: 0px 20px;
 }
 
-#
+
 #footer .right {
   min-height: 50px;
   width: 20%;
@@ -218,22 +218,22 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
-#
+
 #footer .right img {
   min-height: 22px;
   width: 22px;
 }
 
 @media screen and (max-width: 800px) {
-  ##footer .left {
+  #footer .left {
     margin-left: 20px;
   }
-  ##footer .right {
+  #footer .right {
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 680px) {
-  ##footer .mid {
+  #footer .mid {
     display: flex;
     flex-direction: column;
     position: absolute;
