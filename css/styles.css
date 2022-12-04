@@ -11,6 +11,10 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+  overflow: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 h1,
@@ -23,6 +27,7 @@ p {
   margin-bottom: 16px;
 }
 
+/* main fonts */
 /* main fonts */
 @font-face {
   font-family: "Caveat-Regular";
@@ -41,20 +46,29 @@ p {
   src: url("/fonts/Lato-Black.ttf");
 }
 @font-face {
+  font-family: "Lato-Black";
+  src: url("/fonts/Lato-Black.ttf");
+}
+@font-face {
   font-family: "Caveat-Bold";
   src: url("/fonts/Caveat-Bold.ttf");
 }
+/* nav  stuff */
 /* nav  stuff */
 nav {
   min-height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 999;
+  z-index: 999;
 }
+
 
 nav .logo {
   min-height: 55px;
@@ -62,10 +76,12 @@ nav .logo {
   margin-left: 50px;
 }
 
+
 nav .logo img {
   min-height: 55px;
   width: 167px;
 }
+
 
 nav .links {
   width: 50%;
@@ -75,6 +91,7 @@ nav .links {
   margin-right: 50px;
 }
 
+
 nav .links a {
   text-decoration: none;
   font-family: "Lato-Regular";
@@ -82,15 +99,18 @@ nav .links a {
   color: #000;
 }
 
+
 nav .links a:hover {
   border-bottom: 2px solid #000;
 }
+
 
 nav .links .login {
   height: 50px;
   width: 150px;
   border-radius: 25px;
   background-color: #ffd972;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
@@ -144,6 +164,7 @@ nav .links .login {
   }
 }
 /* footer  stuff */
+#/* footer  stuff */
 #footer {
   min-height: 50px;
   width: 100%;
@@ -154,6 +175,7 @@ nav .links .login {
   bottom: 0;
 }
 
+#
 #footer .left {
   min-height: 50px;
   width: 25%;
@@ -162,12 +184,14 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
+#
 #footer .left .foot-txt {
   color: #000;
   font-size: 15px;
   font-family: "Lato-Italic";
 }
 
+#
 #footer .mid {
   min-height: 50px;
   width: 55%;
@@ -176,6 +200,7 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
+#
 #footer .mid .foot-txt {
   color: #000;
   font-size: 15px;
@@ -184,6 +209,7 @@ nav .links .login {
   margin: 0px 20px;
 }
 
+#
 #footer .right {
   min-height: 50px;
   width: 20%;
@@ -192,21 +218,22 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
+#
 #footer .right img {
   min-height: 22px;
   width: 22px;
 }
 
 @media screen and (max-width: 800px) {
-  #footer .left {
+  ##footer .left {
     margin-left: 20px;
   }
-  #footer .right {
+  ##footer .right {
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 680px) {
-  #footer .mid {
+  ##footer .mid {
     display: flex;
     flex-direction: column;
     position: absolute;
