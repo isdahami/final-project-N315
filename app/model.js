@@ -8,3 +8,19 @@ export function changePage(pageID, subPage) {
   });
 };
 
+export function setUserInfo(userObject) {
+  userInfo = userObject;
+  userSignedIn = true;
+  // console.log(userInfo);
+}
+
+export function checkUserLogin(useremail, userpass) {
+  //check to see if login info is correct, returns true if correct, false if not
+  if (useremail == userInfo.email && userpass == userInfo.password) {
+    userSignedIn = true;
+    return true;
+  } else {
+    return false;
+  }
+}
+

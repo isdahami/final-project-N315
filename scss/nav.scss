@@ -1,7 +1,7 @@
 /* nav  stuff */
 nav {
   height: var(--nav-height);
-   min-height: 90px; 
+  min-height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -14,9 +14,8 @@ nav {
   transform: transform 0.2s;
 }
 
-.nav--hidden   {
+.nav--hidden {
   transform: translateY(calc(-1 * var(--nav-min-height)));
-  
 }
 
 nav .logo {
