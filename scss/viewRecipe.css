@@ -1,0 +1,246 @@
+.viewRep-wrapper {
+  min-height: 100%;
+  width: 100%;
+}
+.viewRep-wrapper .lr-container {
+  margin-top: 100px;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.viewRep-wrapper .lr-container .left-viewRep {
+  min-height: 420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.viewRep-wrapper .lr-container .left-viewRep .left-txt {
+  font-family: "Lato-Black";
+  font-size: 25px;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+  margin-left: 160px;
+}
+.viewRep-wrapper .lr-container .left-viewRep img {
+  min-height: 400px;
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.viewRep-wrapper .lr-container .right-viewRep {
+  min-height: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-one {
+  font-family: "Lato-Black";
+  font-size: 25px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-two {
+  width: 300px;
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-three {
+  font-family: "Lato-Black";
+  font-size: 20px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-four {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-five {
+  font-family: "Lato-Black";
+  font-size: 20px;
+}
+.viewRep-wrapper .lr-container .right-viewRep .right-txt-six {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container {
+  min-height: 300px;
+  width: 50%;
+}
+.viewRep-wrapper .ingred-container .ingred-head {
+  min-height: 40px;
+  width: 100%;
+  margin-left: 190px;
+}
+.viewRep-wrapper .ingred-container .ingred-head .head-txt {
+  font-family: "Lato-Black";
+  font-size: 25px;
+}
+.viewRep-wrapper .ingred-container .ingred-list {
+  min-height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  margin-left: 190px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-one {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-two {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-three {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-four {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-five {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-six {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-seven {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .ingred-container .ingred-list .ingred-txt-eight {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container {
+  min-height: 300px;
+  width: 50%;
+  margin-top: 58px;
+}
+.viewRep-wrapper .instruction-container .instruction-head {
+  min-height: 40px;
+  width: 100%;
+  margin-left: 190px;
+}
+.viewRep-wrapper .instruction-container .instruction-head .head-txt {
+  font-family: "Lato-Black";
+  font-size: 25px;
+}
+.viewRep-wrapper .instruction-container .instruction-list {
+  min-height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  margin-left: 190px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .instruction-txt-one {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .instruction-txt-two {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .instruction-txt-three {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .instruction-txt-four {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .instruction-txt-five {
+  font-family: "Caveat-Regular";
+  font-size: 20px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .edit-btn {
+  border-radius: 25px;
+  background-color: #ffd972;
+  border: none;
+  color: #000;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Caveat-Regular";
+  margin-top: 60px;
+}
+.viewRep-wrapper .empty {
+  min-height: 150px;
+}
+
+@media screen and (max-width: 985px) {
+  .viewRep-wrapper .lr-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .viewRep-wrapper .lr-container .right-viewRep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .viewRep-wrapper .lr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .viewRep-wrapper .lr-container .left-viewRep {
+    margin-top: 150px;
+    width: 100%;
+  }
+  .viewRep-wrapper .lr-container .left-viewRep .left-txt {
+    margin: 0 0;
+  }
+  .viewRep-wrapper .lr-container .left-viewRep img {
+    min-height: 300px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+  }
+  .viewRep-wrapper .lr-container .right-viewRep {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .viewRep-wrapper .ingred-container {
+    width: 50%;
+  }
+  .viewRep-wrapper .ingred-container .ingred-list {
+    min-height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=viewRecipe.css.map */
