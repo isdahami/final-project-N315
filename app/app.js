@@ -25,6 +25,7 @@ function initApp() {
     // listening for a 'hashchange', calls route when the hastag does change
     $(window).on("hashchange", route)
     route();
+   
 }
 
 $(document).ready(function () {

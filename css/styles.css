@@ -6,6 +6,8 @@
 
 html,
 body {
+  --nav-min-height:90px;
+  padding-top: var(--nav-min-height);
   height: 100%;
   overflow: none;
   bottom: 0;
@@ -56,19 +58,24 @@ p {
 /* nav  stuff */
 /* nav  stuff */
 nav {
-  min-height: 90px;
+  height: var(--nav-height);
+   min-height: 90px; 
   width: 100%;
   position: fixed;
   top: 0;
-  position: fixed;
-  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 999;
-  z-index: 999;
+  /* background-color: #0000001f; */
+  transform: transform 0.2s;
 }
 
+.nav--hidden   {
+  transform: translateY(calc(-1 * var(--nav-min-height)));
+  
+}
 
 nav .logo {
   min-height: 55px;
@@ -173,6 +180,7 @@ nav .links .login {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
+  
 }
 
 
@@ -496,6 +504,8 @@ nav .links .login {
   /* background-color: #fcbcb8; */
 }
 
+
+
 /* create stuff */
 .create-wrapper {
   min-height: 100vh;
@@ -508,48 +518,141 @@ nav .links .login {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
+ 
+}
+
+.create-recipe-form {
+  margin: 149px;
+  width:100%;
+  height:100%;
+   left: 1em; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* float: center; */
 }
 
 
+.form-create-title {
+  font-size: 25px;
+  letter-spacing: 2.5px;
+ font-family: "Lato-Black";
+ font: normal normal normal 25px/30px ;
+
+}
 
 
+.form-create-wrapper {
+  margin-top: 240px;
+ padding-bottom: 40px;
+ position: relative;
 
+}
+.form-create-section title {
+  height: 111.45px;
+ background-color: #ffd972;
+  /* text-decoration:  3px  underline #000000; */
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding: 10px;
+  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  color: black;
+  width: 980.16px;
+  
+  border: none;
 
+}
 
+.form-create input {
+  height: 111.45px;
+ background-color: #ffd972;
+  /* text-decoration:  3px  underline #000000; */
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding: 10px;
+  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  color: black;
+  width: 980.16px;
+  
+  border: none;
 
+}
+.create-button {
+  height: 30px;
+  width: 80%;
+  margin: 0 ;
+  /* background-color: #EFA7A7; */
+  bottom: 0px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: none;
+  */
+  
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* login stuff */
-.login-wrapper {
-  min-height: 100vh;
-  width: 100%;
+.create-btn {
+  height: 52px;
+  width: 422px;
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  box-shadow: 5px 10px 5px #00000029;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: rgb(255, 217, 114);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  border: none;
+  margin: 410px ;
+  
 }
+
+.create-add {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  bottom: 100px;
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  box-shadow: 5px 10px 5px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  margin-left: 900px;
+  
+}
+
+.create-files {
+  height: 36.2px;
+  width: 110px;
+  position: relative;
+  bottom: 100px;
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  box-shadow: 5px 10px 5px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  margin-left: 850px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* login stuff */
 .log-wrapper {
   min-height: 100vh;
@@ -566,7 +669,7 @@ nav .links .login {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  
 }
  .log-container {
   margin-top: 189px;

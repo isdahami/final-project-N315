@@ -3,6 +3,8 @@ export function changePage(pageID, subPage) {
       $.get(`pages/${pageID}.html`, function(data) {
         // injects HTML onto the page
         $("#app").html(data); 
+        console.log(pageID)
+        // $("#nav").html(data);
   });
 };
 

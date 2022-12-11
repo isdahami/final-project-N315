@@ -6,7 +6,11 @@
 
 html,
 body {
+  --nav-min-height:90px;
+  padding-top: var(--nav-min-height);
   height: 100%;
+  overflow: none;
+  bottom: 0;
   overflow: none;
   bottom: 0;
   right: 0;
