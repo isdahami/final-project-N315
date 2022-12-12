@@ -9,6 +9,7 @@
   // works on home page but not on browse
   position: fixed;
   bottom: 0;
+  z-index: 2;
 }
 
 #footer .left {

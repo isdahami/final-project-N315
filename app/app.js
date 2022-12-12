@@ -22,14 +22,18 @@ function route() {
 }
 
 function initSubmitListeners() {
-    //listener for sign up section of account page
+ /* Listening for a click on the submit button and then it is getting the values of the input fields.
+ It is then checking to make sure that all fields are valid. If they are not valid, it will alert
+ the user that they must respond to all fields. If they are valid, it will create a user object and
+ then set the user info. It will then alert the user that they are logged in. */
     $("#submit-signup").on("click", function (e) {
       console.log("submit");
+      /* Getting the values of the input fields. */
       let em = $("#email").val();
       let cp = $("#createPass").val();
       let cfp = $("#confPass").val();
   
-      //make sure to check that all fields are valid
+      // make sure to check that all fields are valid
   
       if (!em || !cp || !cfp ) {
         alert("you must respond to all fields");
@@ -65,7 +69,7 @@ function initSubmitListeners() {
   }
 
 
-// function that deletes a recipe, currently deleting buttons on other pages so commented out...
+// function that deletes a recipe, it's currently deleting buttons on other pages so commented out...
 // function deleteRepBtn() {
 //     $(document).on('mouseenter', 'yR-recipe-container', function () {
 //         $(this).find(":button").show();
