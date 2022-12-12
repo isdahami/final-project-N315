@@ -11,7 +11,7 @@ export function changePage(pageID, subPage) {
 export function setUserInfo(userObject) {
   userInfo = userObject;
   userSignedIn = true;
-  // console.log(userInfo);
+  console.log(userInfo);
 }
 
 export function checkUserLogin(useremail, userpass) {

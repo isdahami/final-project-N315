@@ -11,10 +11,10 @@ function route() {
 
     // if there's nothing in the URL then it passes in 'home'
     if(pageID == "") {
-        MODEL.changePage("home");
+        MODEL.changePage("home", initSubmitListeners);
     } else {
         if(pageID == subPageID) {
-            MODEL.changePage(pageID, initSubmitListeners);
+            MODEL.changePage(pageID);
         } else {
             MODEL.changePage(pageID, subPageID);
         }
@@ -26,7 +26,7 @@ function initSubmitListeners() {
  It is then checking to make sure that all fields are valid. If they are not valid, it will alert
  the user that they must respond to all fields. If they are valid, it will create a user object and
  then set the user info. It will then alert the user that they are logged in. */
-    $("#submit-signup").on("click", function (e) {
+    $("#signup-butt").on("click", function (e) {
       console.log("submit");
       /* Getting the values of the input fields. */
       let em = $("#email").val();
