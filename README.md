@@ -8,7 +8,7 @@ For the CRUD part of your team's app, you can use a JSON string stored in memory
 
 link: https://in-info-web4.informatics.iupui.edu/~isdahami/N315/final-project/index.html
 
-- Isaac Hamilton
+- Isaac Hamilton 
 - set up initial project, all the base folders
 - created the initial MVC model in the app and model folder
 - styled the nav/footer and made it responsive
@@ -18,3 +18,8 @@ link: https://in-info-web4.informatics.iupui.edu/~isdahami/N315/final-project/in
 - updated the app/model to make it view subpages,specifically the route function
 - created a function in the app to delete recipes on the your recipe page, although it's broken so it's commented out
 - worked on the login JS in the app/model to give feedback to the user
+Oluwatishe Elesinnla
+- styled the browse page 
+- styled the login page 
+- styled the create recipe page 
+- worked on js 

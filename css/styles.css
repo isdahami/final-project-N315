@@ -716,10 +716,11 @@ letter-spacing: 2px;
 
 
 @media all, screen  and (min-width: 375px) {
-  .create-wrapper  {
-    min-width: 75px;
-    max-height: 167;
-    margin-top: 150px;
+   .create-recipe-form {
+    width: 1em;
+    max-height: 15em;
+    margin-top: 50em;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -734,18 +735,73 @@ letter-spacing: 2px;
   } 
 
 @media screen and (max-width: 950px) {
-  .create-wrapperinput {
+  .create-wrapper input {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
   }
 }
 
 
 
+@media screen and (width: 1920px) {
+  .create-wrapper  {
+    top: 20%;
+    right: 37%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .home-wrapper .circles-container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  .home-wrapper .circles-container .home-circle-one {
+    min-height: 300px;
+    width: 300px;
+  }
+  .home-wrapper .circles-container .home-circle-two {
+    min-height: 120px;
+    width: 120px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-wrapper .circles-container .home-circle-one {
+    min-height: 250px;
+    width: 250px;
+  }
+  .home-wrapper .circles-container .home-circle-two {
+    min-height: 100px;
+    width: 100px;
+    margin-top: 80px;
+  }
+  .home-wrapper .circles-container .home-circle-two .circle-two-text-container {
+    min-height: 50px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-wrapper .circles-container .home-circle-one {
+    min-height: 200px;
+    width: 200px;
+  }
+  .home-wrapper .circles-container .home-circle-two {
+    min-height: 100px;
+    width: 100px;
+    margin-top: 120px;
+  }
+  .home-wrapper .circles-container .home-circle-two .circle-two-text-container {
+    min-height: 50px;
+    width: 90px;
+  }
+}
 
 
 
@@ -900,6 +956,7 @@ form {
   position: absolute;
   top: 0;
   left: 0;
+  color: #000000;
 }
 .yourRecipe-wrapper .yR-wrapper {
   min-height: 100%;
@@ -917,6 +974,7 @@ form {
 .yourRecipe-wrapper .yR-wrapper .yR-head .yR-head-txt {
   font-family: "Caveat-Bold";
   font-size: 25px;
+  color: #000000;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container {
   display: flex;
@@ -1002,15 +1060,22 @@ form {
   border-radius: 25px;
   margin-bottom: 15px;
   background-color: #fff;
+  font: normal normal normal 15px/18px "Lato" Black;
+letter-spacing: 1.5px;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-txt-box .yR-txt-one {
   font-family: "Lato-Black";
   font-size: 15px;
+  color: #000000;
   border-bottom: 2px solid #000;
+  font: normal normal normal 15px/18px "Lato" Black;
+letter-spacing: 1.5px;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-txt-box .yR-txt-two {
-  font-family: "Lato-Regular";
-  font-size: 9px;
+
+  font: normal normal normal 9px/11px "Lato";
+  letter-spacing: 0.9px;
+color: #000000;
   width: 138px;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-txt-box .yR-txt-three {
@@ -1019,6 +1084,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  color: #000000;
+  
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-txt-box .yR-txt-four {
   font-family: "Lato-Regular";
@@ -1026,6 +1093,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  color: #000000;
 }
 @media screen and (max-width: 640px) {
   .yourRecipe-wrapper {

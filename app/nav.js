@@ -14,7 +14,7 @@ import * as MODEL from "./model.js";
 //     lastScrollY = window.scrollY;
 // });
 
-$("wrapper-clone").show();("click","#deletBox", function(e){ //user click on remove text
+$("wrapper-clone").show();("click","#deleteBox", function(e){ //user click on remove text
            
     e.preventDefault(); 
     $(this).parent('div').remove(); 
@@ -41,6 +41,7 @@ var stepCnt = 3;
 		     //text box increment
             $("wrapper").append(`<input type="textarea" id="ingredients${ingCont}" placeholder="Ingredients #${ingCont + 1}" class="add-input">`); //add input box
             ingCont++; 
+            
 	  }
     });
 
@@ -153,6 +154,7 @@ function initApp() {
 
 $(document).ready(function () {
     initApp();
+InitListener();
     // deleteRepBtn();
 });
 

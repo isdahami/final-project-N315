@@ -40,7 +40,7 @@ function InitListener(){
         ingredients: [],
         
     };
-        console.log("submit");
+        
 
         e.preventDefault();
         $(".recipe .clone").each(idx,step => {
@@ -53,12 +53,12 @@ function InitListener(){
             recipe.ing.push({ing: ing.value});
     
         })
-        console.log("recipe");
-    });   
+      
+        console.log("submit");
 
       });
     }
-
+}
 
 function route() {
     // gets hashtag and name after
