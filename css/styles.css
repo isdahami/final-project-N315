@@ -596,41 +596,97 @@ nav .links .login {
   
 }
 
-.create-btn {
+input.create-btn {
   height: 52px;
   width: 422px;
   border-radius: 25px;
   background-color: #EFA7A7;
-  box-shadow: 5px 10px 5px #00000029;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
-  margin: 410px ;
+  margin: 0px ;
   
 }
-
-.create-add {
+.addBtn {
   height: 38px;
   width: 38px;
   position: relative;
   bottom: 100px;
   border-radius: 25px;
   background-color: #EFA7A7;
-  box-shadow: 5px 10px 5px #00000029;
+  left: 280;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
   margin-left: 900px;
-  
+  z-index: 89;
+   text-decoration-line: hidden; 
+
 }
 
-.create-files {
+.addButton {
+  /* font-size: 32rem;
+  color: #fff; */
+
+  color: #EFA7A7;
+  height: 38px;
+  width: 38px;
+  overflow: hidden;
+  position: relative;
+  bottom: 100px;
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  text-decoration-line: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+border-inline-start-color: #fff;
+  margin-left: 900px;
+  z-index: 89;
+}
+
+ p{
+  margin-top:15px;
+  position: relative;
+  color: white;
+  font-size: 32px;
+}
+
+input::file-selector-button {
+   display: none;
+  width: 110px;
+  height: 36.2px;
+  z-index: 8;
+  left: 830px;
+  bottom: 0px;
+  position: relative;
+}
+
+label {
   height: 36.2px;
   width: 110px;
   position: relative;
-  bottom: 100px;
+   bottom: 110px; 
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  box-shadow: 5px 10px 5px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  margin-left: 840px;
+  /* z-index:3; */
+}
+
+
+.custom-file-upload {
+  height: 36.2px;
+  width: 110px;
+  position: relative;
+  top: 60px;
   border-radius: 25px;
   background-color: #EFA7A7;
   box-shadow: 5px 10px 5px #00000029;
@@ -639,16 +695,59 @@ nav .links .login {
   justify-content: space-evenly;
   border: none;
   margin-left: 850px;
+  z-index: 8;
+}
+
+.clone-wrapper {
+  
+}
+
+.form-create-section-title{
+  font: normal normal normal 20px/24px "Lato" Black;
+letter-spacing: 2px;
+
+ 
+}
+
+
+#imgPreview{
+  bottom: 180px;
+  position: relative;
+ outline:#fff;
+
+  
 
 }
 
 
+@media all, screen  and (min-width: 375px) {
+  .create-wrapper  {
+    min-width: 75px;
+    max-height: 167;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .create-wrapper input {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: center;
+    /* margin-right: 200px; */
+  } 
 
-
-
-
-
-
+@media screen and (max-width: 950px) {
+  .create-wrapperinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
 
 
 
@@ -761,7 +860,21 @@ form {
   
 }
 
-input {
+.sig input{
+  height: 30px;
+ background-color: #ffd972;
+  /* text-decoration:  3px  underline #000000; */
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding: 10px;
+  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  color: black;
+  width: 250.03px;
+  padding: 10px;
+  border: none;
+
+}
+.lo input{
   height: 30px;
  background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */

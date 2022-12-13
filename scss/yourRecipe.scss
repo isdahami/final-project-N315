@@ -14,7 +14,9 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-
+  position: absolute;
+  top: 0;
+  left: 0;
   .yR-wrapper {
     min-height: 100%;
     width: 100%;
@@ -38,9 +40,9 @@
     .yR-recipe-container {
       display: flex;
       align-items: center;
-
       min-height: 400px;
       width: 80%;
+      margin-bottom: 30px;
 
       // background-color: yellow;
 
@@ -89,6 +91,11 @@
           font-size: 20px;
           font-family: "Caveat-Regular";
           cursor: pointer;
+
+          .edit-btn-link {
+            text-decoration: none;
+            color: #000;
+          }
         }
         .delete-btn {
           position: absolute;
@@ -153,18 +160,17 @@
       }
     }
 
-    .empty {
-      min-height: 100px;
-      width: 100%;
-      // background-color: purple;
-    }
+    // .empty {
+    //   width: 100%;
+    //   // background-color: purple;
+    // }
   }
 }
 
 // come back to this, still needs work
 @media screen and (max-width: 640px) {
   .yourRecipe-wrapper {
-    // margin-top: 200px;
+    margin-top: 100px;
     .yR-wrapper {
       .yR-head {
         min-height: 24px;

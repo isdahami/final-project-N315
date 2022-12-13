@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#browse">Browse</a>
+        <a href="#create">Create Recipes</a>
+        <a href="#yourRecipe">Your Recipes</a>
+        <div class="login">
+          <a href="#login">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="app"></div>
+   
+    <footer id="footer">
+      <div class="left">
+        <span class="foot-txt">Copyright © 2019 The Jungle Cook</span>
+      </div>
+      <div class="mid">
+        <a class="foot-txt" href="#login">Login</a>
+        <a class="foot-txt" href="#">Recipes By Category</a>
+        <a class="foot-txt" href="#">Privacy and Copyright</a>
+        <a class="foot-txt" href="#create">Create Recipe</a>
+        <a class="foot-txt" href="#yourRecipe">Your Recipes</a>
+      </div>
+      <div class="right">
+        <img src="images/facebook.svg" alt="">
+        <img src="images/instagram.svg" alt="">
+      </div>
+    </footer>
+
+<script>
+ {
+  // following scroll hide on a y axis
+  var nav = document.querySelector("nav");
+  let navScrollY = window.scrollY;
+  
+  window.addEventListener("scroll", () => {
+      if (navScrollY < window.scrollY) {
+          nav.classList.add("nav--hidden");
+          console.log("hi");
+      } else {
+          nav.classList.remove("nav--hidden");
+      }
+  
+      lastScrollY = window.scrollY;
+  });
+  }
+
+
+  // }
+function  listen() {
+    // $("nav a") this is a jquery selecor
+    // click is a listener
+    $(".submit").click(function (e) {
+        alert('Wyld you ');  //  ...this opens an alert
+        // optional to use that e
+        // this.id is a jquery style that refers to the actual a tag you are clicking on
+         let btnID = this.id;
+    
+          console.log("what id" + btnID);
+       })
+    
+}
+  </script>
+  <!-- // 
+    
+  //   $("#jquery-upload-form").click(function() {
+  //     let fileData = new fileData();
+  //     let file = $('#file')[0].files[0];
+  //     fileData.append('file', file);
+
+  //     $.ajax({
+  //       url:'',
+  //       type:'post',
+  //       data: fileData,
+  //       contentType: false,
+  //       processData: falsee,
+  //       success: function(data) {
+  //         if (data ! = 0) {
+  //           alert('Successful jQuery file upload to: ' +data);
+  //         }
+  //         else{
+  //           alert('jQuery file upload error.');
+  //         }
+  //       },
+  //     });
+  //   }); -->
+  <script type="text/javascript">
+   
+    // $(this).closest('input').html('<div class=" wrapper"><input type="text" placeholder="Ingredients #3" class="add-input"><button type="button"  onclick="addBoxes()" class="add-row-button"><i class="bx  plus-icon"></i></button> </div> ')
+</script>
+<!-- <script>
+function initSubmitListener() {
+  $("#submit").on("click",function () {
+ console.log("submit");
+ let fc = (".add-input-text").val();
+
+ if (fn == "") {
+  alert("enter data");
+ }
+ else {
+  alert("enter ingredients to get data");
+
+ }
+
+});
+
+
+function addBox() {
+let 
+
+  $("create-add").on("click", function (e) {
+// body...
+console.log("clone");
+
+$(".clone").clone().find('input').val('').end().find('textarea').val('').end().appendTo('#wrapper-clone');
+}
+addBox.add
+  );
+  }
+}</script> -->
+<script type="text/javascript">
+
+  
+   
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="lib/jquery-3.6.1.min.js"></script>
+<script type="module" src="app/model.js"></script>
+<script type="module" src="app/app.js"></script>
+<script  src="app/viewRecipes.js"></script>
+</body>
+</html>

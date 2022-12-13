@@ -8,77 +8,106 @@
                
                 <h1 class="form-create-title">Hey Michael, create your recipe!</h1>
             </div>
-            <div class="recipe" action="#">
-                <div class=" input">
-                    <inp ut type="display" placeholder="Add Recipe Image" class="input">
-                    <div class="create_files ">
-                        <button class="create-files">Attach files</button>
+                    <div class="recipe" action="##yourRecipe">
+                        <div class=" recipe-input">
+                            <form id="jquery-upload-form" enctype="multipart/form-data" accept="image/png, image/jpeg" value="Attach file"  action="upload.php">
+                                
+                                <input id="file" type="file" value="Attach file" placeholder="Add Recipe Image" name="file[]" label="hi"  accept="image/png, image/jpeg"class=" add-input-text"multiple/>
+                            <label>Attach files</label>
+                                <input id="imgPreview" type="image" src="#" style="width: 100px; height: 100px;" >
+            
+                                
+                        
+                            </form>
+                       
+                    
+                        <div class="input">
+                            <input type="text" placeholder="Recipe Name" class="add-input-text">
+                            
+                        </div>
+                        <div class=" input">
+                            <input type="description" placeholder="Recipe Description" class="add-input-text">
+                        </div>
+
+                        <div class=" input">
+                            <input type="text" placeholder="Recipe Total Time" class="add-input-text">
+                           
+                        </div>
+                        <div class=" input">
+                            <input type="size" placeholder="Recipe Serving Size" class="add-input-text">
+                        </div>
+                     </div>
+                </div>
+                        <br/><br/>
+                
+
+                <form class="form-input ingredients" id="wrapper" method="post" action="">
+                    <section>
+                        <div class="form-create-section">
+                
+                            <h4 class="form-create-section-title">Enter Ingredients:</h4>
+                        </div>
+                        <div class=" input">
+                            <input type="texty" placeholder="Ingredients #1" class="add-input" id="step1">
+                        </div>
+        
+                        <div class="form input">
+                            <input type="text" id="step2" placeholder="Ingredients #2" class="add-input">
+                            
+                        </div>
+                        <div  class="clone">
+                            <input type="textarea" id="step3" placeholder="Ingredients #3" class="add-input">
+        
+                        </div>
+                        <div type="button"  class="addBtn">     
+                           <p> +</p> 
                     </div>
-                </div>
+                           
+                    </section>
 
-                <div class="form input">
-                    <input type="text" placeholder="Recipe Name" class="password">
-                    <i class='bx bx-hide eye-icon'></i>
-                </div>
-                <div class=" input">
-                    <input type="description" placeholder="Recipe Description" class="input">
-                </div>
+                <section>
+                    <div class="form-create-section">
+                
+                        <h4 class="form-create-section-title">Enter Instructions:</h4>
+                    </div>
+                    <div class=" input">
+                        <input type="texty" placeholder="Ingredients #1" class="add-input">
+                    </div>
 
-                <div class="form input">
-                    <input type="text" placeholder="Recipe Total Time" class="password">
-                    <i class='bx bx-hide eye-icon'></i>
+                    <div class="form input">
+                        <input type="text" id="instructions" placeholder="Ingredients #2" class="add-input">
+                        
+                    </div>
+                    <div  class="clones">
+                        <input type="textarea" id="instructions" placeholder="Ingredients #3" class="add-input">
+    
+                    </div>
+                    <div type="button"  class="addBtn">     
+                        <p id=".addButton">+</p>
                 </div>
-                <div class=" input">
-                    <input type="size" placeholder="Recipe Serving Size" class="input">
-                </div>
-               
-            </div>
-
-            <div class="ingredients" action="#">
-                <div class="form-create-section">
-               
-                    <h4 class="form-create-section-title">Enter Ingredients:</h4>
-                </div>
-                <div class=" input">
-                    <input type="texty" placeholder="Ingredients #1" class="input">
-                </div>
-
-                <div class="form input">
-                    <input type="text" placeholder="Ingredients #2" class="password">
+                </section>
+                    <br/><br/>
+              <div>                
+                <input href="#yourRecipe"class="create-btn"type="submit" onClick="this.form.target='_blank;'" 
+                value="Create Recipe" id="submit" class="hidden btn btn-primary pull-right">
                     
                 </div>
-                <div class=" input">
-                    <input type="text" placeholder="Ingredients #3" class="input">
-                    <button class="create-add one">
-                        <i class='bx  plus-icon'></i></button>
+                
+               
+
+                   
+
+
+                </div>
+                <!-- add more boxes -->
+                <div id=" wrapper-clone">
+                    
                 </div>
 
                 
-            </div>
+            </form>
 
-            <div class="instructions" action="#">
-                <div class="form-create-section">
-               
-                    <h4 class="form-create-section-title">Enter Instructions:</h4>
-                </div>
-                <div class=" input">
-                    <input type="display" placeholder="Instructions #1" class="input">
-                </div>
 
-                <div class="form input">
-                    <input type="text" placeholder="Instructions #2" class="password">
-                    
-                </div>
-                <div class=" input">
-                    <input type="description" placeholder="Instructions #3" class="input">
-                    <button class="create-add two">
-                        <i class='bx  plus-icon'></i>
-                    </button>
-                </div>
-            </div>
-            <div class="create-button">
-                <button class="create-btn">Create Recipe</button>
-            </div>
         </div>       
     </div>
 

@@ -13,17 +13,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 /* login stuff */
 .log-wrapper {
   min-height: 100vh;
-  
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background:  rgba(255, 217, 114);
+  background: rgba(255, 217, 114);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,46 +31,43 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
- .log-container {
+.log-container {
   margin-top: 189px;
   margin-bottom: 103px;
-  
+
   z-index: 1;
   margin-right: 73.91px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
- }
+}
 
- .log{
-  
+.log {
   left: -250px;
   height: 100%;
   width: 250px;
   display: flex;
   position: relative;
   padding-left: 240px;
-   padding-right: 300px; 
-   margin-left: 276px;
-   /* top: 100px;  */
+  padding-right: 300px;
+  margin-left: 276px;
+  /* top: 100px;  */
   align-items: center;
-  
+
   justify-content: center;
- /* background-color: #fcbcb8; */
+  /* background-color: #fcbcb8; */
   /* column-gap: 30px; */
   float: center;
-/* overflow: scroll; */
-
+  /* overflow: scroll; */
 }
 .signup {
   position: relative;
   left: -250px;
   margin-left: 250px;
 }
-
 
 .form-content-login-title {
   font-family: "Lato-Regular";
@@ -85,8 +82,7 @@
   font-size: 12px;
 }
 
-
- #log-butt {
+#log-butt {
   height: 52px;
   width: 209px;
   border-radius: 25px;
@@ -109,33 +105,30 @@
   border: none;
 }
 
-.butts{
+.butts {
   font-size: 25px;
   letter-spacing: 2.5px;
- font-family: "Lato-Regular";
- font: normal normal normal 25px/30px Lato;
-} 
-
-
+  font-family: "Lato-Regular";
+  font: normal normal normal 25px/30px Lato;
+}
 
 form {
   font-family: "Lato-Regular";
-  
 }
 
 input {
   height: 30px;
- background-color: #ffd972;
+  background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
   margin-bottom: 20px;
   border: 1px solid;
   padding: 10px;
-  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  background: linear-gradient(#000, #000) center bottom 5px / calc(100% - 10px)
+    2px no-repeat;
   color: black;
   width: 250.03px;
   padding: 10px;
   border: none;
-
 }
 
 ::-webkit-input-placeholder {
