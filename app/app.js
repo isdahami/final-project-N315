@@ -4,7 +4,7 @@ import * as MODEL from "./model.js";
 
 
 function InitListener(){
-    $(document).ready(function() {
+    $(document).ready(()=> {
           var ingCnt = 3;
           var stepCnt = 3;
           var max_boxes = 10; //maximum input boxes allowed
@@ -57,7 +57,7 @@ function InitListener(){
         console.log("submit");
 
       });
-    }
+    });
 }
 
 function route() {
