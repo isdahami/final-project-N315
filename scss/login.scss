@@ -116,21 +116,33 @@ form {
   font-family: "Lato-Regular";
 }
 
-input {
+.sig input{
+  height: 30px;
+ background-color: #ffd972;
+  /* text-decoration:  3px  underline #000000; */
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding: 10px;
+  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  color: black;
+  width: 250.03px;
+  padding: 10px;
+  border: none;
+
+}
+.lo input{
   height: 30px;
   background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
   margin-bottom: 20px;
   border: 1px solid;
   padding: 10px;
-  background: linear-gradient(#000, #000) center bottom 5px / calc(100% - 10px)
-    2px no-repeat;
+  background: linear-gradient(#000, #000) center bottom 5px/calc(100% - 10px) 2px no-repeat;
   color: black;
   width: 250.03px;
   padding: 10px;
   border: none;
 }
-
 ::-webkit-input-placeholder {
   color: black;
 }

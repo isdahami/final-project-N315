@@ -11,8 +11,6 @@ body {
   height: 100%;
   overflow: none;
   bottom: 0;
-  right: 0;
-  left: 0;
   overflow: none;
   bottom: 0;
   right: 0;
@@ -29,7 +27,6 @@ p {
   margin-bottom: 16px;
 }
 
-/* main fonts */
 /* main fonts */
 @font-face {
   font-family: "Caveat-Regular";
@@ -48,18 +45,13 @@ p {
   src: url("/fonts/Lato-Black.ttf");
 }
 @font-face {
-  font-family: "Lato-Black";
-  src: url("/fonts/Lato-Black.ttf");
-}
-@font-face {
   font-family: "Caveat-Bold";
   src: url("/fonts/Caveat-Bold.ttf");
 }
 /* nav  stuff */
-/* nav  stuff */
 nav {
   height: var(--nav-height);
-   min-height: 90px; 
+  min-height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -72,9 +64,8 @@ nav {
   transform: transform 0.2s;
 }
 
-.nav--hidden   {
+.nav--hidden {
   transform: translateY(calc(-1 * var(--nav-min-height)));
-  
 }
 
 nav .logo {
@@ -83,12 +74,10 @@ nav .logo {
   margin-left: 50px;
 }
 
-
 nav .logo img {
   min-height: 55px;
   width: 167px;
 }
-
 
 nav .links {
   width: 50%;
@@ -98,7 +87,6 @@ nav .links {
   margin-right: 50px;
 }
 
-
 nav .links a {
   text-decoration: none;
   font-family: "Lato-Regular";
@@ -106,18 +94,15 @@ nav .links a {
   color: #000;
 }
 
-
 nav .links a:hover {
   border-bottom: 2px solid #000;
 }
-
 
 nav .links .login {
   height: 50px;
   width: 150px;
   border-radius: 25px;
   background-color: #ffd972;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
@@ -171,7 +156,6 @@ nav .links .login {
   }
 }
 /* footer  stuff */
-/* footer  stuff */
 #footer {
   min-height: 50px;
   width: 100%;
@@ -180,9 +164,8 @@ nav .links .login {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  
+  z-index: 2;
 }
-
 
 #footer .left {
   min-height: 50px;
@@ -192,13 +175,11 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
-
 #footer .left .foot-txt {
   color: #000;
   font-size: 15px;
   font-family: "Lato-Italic";
 }
-
 
 #footer .mid {
   min-height: 50px;
@@ -208,7 +189,6 @@ nav .links .login {
   justify-content: space-evenly;
 }
 
-
 #footer .mid .foot-txt {
   color: #000;
   font-size: 15px;
@@ -217,7 +197,6 @@ nav .links .login {
   margin: 0px 20px;
 }
 
-
 #footer .right {
   min-height: 50px;
   width: 20%;
@@ -225,7 +204,6 @@ nav .links .login {
   align-items: center;
   justify-content: space-evenly;
 }
-
 
 #footer .right img {
   min-height: 22px;
@@ -504,8 +482,6 @@ nav .links .login {
   /* background-color: #fcbcb8; */
 }
 
-
-
 /* create stuff */
 .create-wrapper {
   min-height: 100vh;
@@ -521,14 +497,13 @@ nav .links .login {
   position: relative;
   top: 0;
   left: 0;
- 
 }
 
 .create-recipe-form {
   margin: 149px;
-  width:100%;
-  height:100%;
-   left: 1em; 
+  width: 100%;
+  height: 100%;
+  left: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,64 +511,57 @@ nav .links .login {
   /* float: center; */
 }
 
-
 .form-create-title {
   font-size: 25px;
   letter-spacing: 2.5px;
- font-family: "Lato-Black";
- font: normal normal normal 25px/30px ;
-
+  font-family: "Lato-Black";
+  font: normal normal normal 25px/30px;
 }
-
 
 .form-create-wrapper {
   margin-top: 240px;
- padding-bottom: 40px;
- position: relative;
-
+  padding-bottom: 40px;
+  position: relative;
 }
+
 .form-create-section title {
   height: 111.45px;
- background-color: #ffd972;
+  background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
   margin-bottom: 20px;
   border: 1px solid;
   padding: 10px;
-  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  background: linear-gradient(#000, #000) center bottom 5px/calc(100% - 10px) 2px no-repeat;
   color: black;
   width: 980.16px;
-  
   border: none;
-
 }
 
 .form-create input {
   height: 111.45px;
- background-color: #ffd972;
+  background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
   margin-bottom: 20px;
   border: 1px solid;
   padding: 10px;
-  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  background: linear-gradient(#000, #000) center bottom 5px/calc(100% - 10px) 2px no-repeat;
   color: black;
   width: 980.16px;
-  
   border: none;
-
 }
+
 .create-button {
   height: 30px;
   width: 80%;
-  margin: 0 ;
+  margin: 0;
   /* background-color: #EFA7A7; */
-  bottom: 0px; 
+  bottom: 0px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   /* border: none;
   */
-  
 }
 
 input.create-btn {
@@ -601,13 +569,21 @@ input.create-btn {
   width: 422px;
   border-radius: 25px;
   background-color: #EFA7A7;
+
   text-decoration: none;
+
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
+
   margin: 0px ;
   
+
+  margin: 410px;
+
 }
 .addBtn {
   height: 38px;
@@ -639,6 +615,7 @@ input.create-btn {
   bottom: 100px;
   border-radius: 25px;
   background-color: #EFA7A7;
+
   text-decoration-line: hidden; 
   display: flex;
   align-items: center;
@@ -673,12 +650,19 @@ label {
   border-radius: 25px;
   background-color: #EFA7A7;
   box-shadow: 5px 10px 5px #00000029;
+
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
+
   margin-left: 840px;
   /* z-index:3; */
+
+  margin-left: 900px;
+
 }
 
 
@@ -689,12 +673,13 @@ label {
   top: 60px;
   border-radius: 25px;
   background-color: #EFA7A7;
-  box-shadow: 5px 10px 5px #00000029;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
   margin-left: 850px;
+
   z-index: 8;
 }
 
@@ -752,15 +737,20 @@ letter-spacing: 2px;
 
 
 
+
+
+
+
+
+
 /* login stuff */
 .log-wrapper {
   min-height: 100vh;
-  
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background:  rgba(255, 217, 114);
+  background: rgb(255, 217, 114);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -768,46 +758,43 @@ letter-spacing: 2px;
   position: absolute;
   top: 0;
   left: 0;
-  
+  z-index: 1;
 }
- .log-container {
+
+.log-container {
   margin-top: 189px;
   margin-bottom: 103px;
-  
   z-index: 1;
   margin-right: 73.91px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
- }
+}
 
- .log{
-  
+.log {
   left: -250px;
   height: 100%;
   width: 250px;
   display: flex;
   position: relative;
   padding-left: 240px;
-   padding-right: 300px; 
-   margin-left: 276px;
-   /* top: 100px;  */
+  padding-right: 300px;
+  margin-left: 276px;
+  /* top: 100px;  */
   align-items: center;
-  
   justify-content: center;
- /* background-color: #fcbcb8; */
+  /* background-color: #fcbcb8; */
   /* column-gap: 30px; */
   float: center;
-/* overflow: scroll; */
-
+  /* overflow: scroll; */
 }
+
 .signup {
   position: relative;
   left: -250px;
   margin-left: 250px;
 }
-
 
 .form-content-login-title {
   font-family: "Lato-Regular";
@@ -822,42 +809,39 @@ letter-spacing: 2px;
   font-size: 12px;
 }
 
-
- #log-butt {
+#log-butt {
   height: 52px;
   width: 209px;
   border-radius: 25px;
   background-color: #ffd972;
-  box-shadow: 5px 10px 5px #00000029;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
 }
+
 #signup-butt {
   height: 52px;
   width: 250px;
   border-radius: 25px;
   background-color: #ffd972;
-  box-shadow: 5px 10px 5px #00000029;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border: none;
 }
 
-.butts{
+.butts {
   font-size: 25px;
   letter-spacing: 2.5px;
- font-family: "Lato-Regular";
- font: normal normal normal 25px/30px Lato;
-} 
-
-
+  font-family: "Lato-Regular";
+  font: normal normal normal 25px/30px Lato;
+}
 
 form {
   font-family: "Lato-Regular";
-  
 }
 
 .sig input{
@@ -876,29 +860,22 @@ form {
 }
 .lo input{
   height: 30px;
- background-color: #ffd972;
+  background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
   margin-bottom: 20px;
   border: 1px solid;
   padding: 10px;
-  background:linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+  background: linear-gradient(#000, #000) center bottom 5px/calc(100% - 10px) 2px no-repeat;
   color: black;
   width: 250.03px;
   padding: 10px;
   border: none;
-
 }
 
 ::-webkit-input-placeholder {
   color: black;
 }
 
-
-
-
-
-
-/* Your Recipe Styling */
 .yourRecipe-wrapper {
   height: 100%;
   width: 100%;
@@ -910,6 +887,9 @@ form {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .yourRecipe-wrapper .yR-wrapper {
   min-height: 100%;
@@ -933,6 +913,7 @@ form {
   align-items: center;
   min-height: 400px;
   width: 80%;
+  margin-bottom: 30px;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-img {
   position: relative;
@@ -979,6 +960,10 @@ form {
   font-size: 20px;
   font-family: "Caveat-Regular";
   cursor: pointer;
+}
+.yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-img .edit-btn .edit-btn-link {
+  text-decoration: none;
+  color: #000;
 }
 .yourRecipe-wrapper .yR-wrapper .yR-recipe-container .yR-img .delete-btn {
   position: absolute;
@@ -1032,12 +1017,10 @@ form {
   align-items: center;
   justify-content: space-evenly;
 }
-.yourRecipe-wrapper .yR-wrapper .empty {
-  min-height: 100px;
-  width: 100%;
-}
-
 @media screen and (max-width: 640px) {
+  .yourRecipe-wrapper {
+    margin-top: 100px;
+  }
   .yourRecipe-wrapper .yR-wrapper .yR-head {
     min-height: 24px;
     width: 293px;
@@ -1080,13 +1063,6 @@ form {
     width: 0px;
   }
 }
-
-
-
-
-
-
-/* View Recipes Styling  */
 .viewRep-wrapper {
   min-height: 100%;
   width: 100%;
@@ -1264,6 +1240,10 @@ form {
   font-size: 20px;
   font-family: "Caveat-Regular";
   margin-top: 60px;
+}
+.viewRep-wrapper .instruction-container .instruction-list .edit-btn .edit-btn-link {
+  text-decoration: none;
+  color: #000;
 }
 .viewRep-wrapper .empty {
   min-height: 150px;
