@@ -11,6 +11,7 @@ link: https://in-info-web4.informatics.iupui.edu/~isdahami/N315/final-project/in
 - Isaac Hamilton
 - set up initial project, all the base folders
 - created the initial MVC model in the app and model folder
+- styled the nav/footer and made it responsive
 - styled the home page and made it responsive
 - styled the your recipe page and made it responsive
 - styled the view recipe page and made it responsive
