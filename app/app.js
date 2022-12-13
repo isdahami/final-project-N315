@@ -35,7 +35,7 @@ function initSubmitListeners() {
   
       // make sure to check that all fields are valid
   
-      if (!em || !cp || !cfp ) {
+      if (!em || !cp || !cfp == "") {
         alert("you must respond to all fields");
       } else {
         let userObj = {
