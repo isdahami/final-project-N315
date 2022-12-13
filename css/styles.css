@@ -375,6 +375,7 @@ nav .links .login {
   position: absolute;
   top: 0;
   left: 0;
+  color:black;
   z-index: -3;
 }
 
@@ -383,6 +384,7 @@ nav .links .login {
   margin-bottom: 103px;
   z-index: 1;
   margin-right: 73.91px;
+  color:black;
 }
 
 .browse-recipe-title {
@@ -392,6 +394,7 @@ nav .links .login {
   margin-left: 107px;
   margin-bottom: 52px;
   font-weight: 900;
+  color:black;
 }
 
 /* top row with pizza, burger, and white boxes */
@@ -456,17 +459,23 @@ nav .links .login {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  color:black;
 }
 
 .browse-box-two-txt-title {
   margin-bottom: 21px;
   border-bottom: 3px solid #000000;
+  color:black;
+  font: normal normal normal 15px/18px Lato Black;
+letter-spacing: 1.5px;
+color: #000000;
 }
 
 #para-one, #para-two, #para-three, #para-four {
   width: 169px;
   height: 77px;
   font-size: 9px;
+  color:black;
 }
 
 .browse-icon-one, img {
@@ -479,6 +488,7 @@ nav .links .login {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  color:black;
   /* background-color: #fcbcb8; */
 }
 
