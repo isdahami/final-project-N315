@@ -125,6 +125,7 @@ nav .links .login {
     font-size: 20px;
     padding: 0px 5px;
   }
+  
 }
 @media screen and (max-width: 500px) {
   nav {
@@ -148,11 +149,22 @@ nav .links .login {
     margin-top: 20px;
   }
   nav .links {
-    padding: 0px 50px;
+    padding: 0px 80px;
   }
   nav .links a {
-    font-size: 20px;
-    padding: 0px 15px;
+    font-size: 15px;
+    padding:0px 5px;
+    flex-wrap: wrap;
+  }
+  nav .links .login {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #ffd972;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 /* footer  stuff */
@@ -492,9 +504,39 @@ color: #000000;
   /* background-color: #fcbcb8; */
 }
 
+@media screen and (max-width: 800px) {
+  
+    .browse-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 50%;}
+      .browse-box-top {
+        margin-top: 150px;
+        width: 100%;
+        /* // background-color: red; */}
+        .left-txt {
+          margin: 0 0;
+        }
+
+        img {
+          min-height: 300px;
+          width: 350px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      
+    }
+
 /* create stuff */
 .create-wrapper {
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -505,7 +547,7 @@ color: #000000;
   background-size: cover;
   margin: 0 auto;
   position: relative;
-  top: 0;
+  /* top: 4em; */
   left: 0;
 }
 
@@ -513,7 +555,7 @@ color: #000000;
   margin: 149px;
   width: 100%;
   height: 100%;
-  left: 1em;
+  padding-right: 122px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -528,23 +570,24 @@ color: #000000;
   font: normal normal normal 25px/30px;
 }
 
-.form-create-wrapper {
-  margin-top: 240px;
-  padding-bottom: 40px;
+.form-create-header {
+  
+ margin-bottom: 40px;
   position: relative;
 }
 
 .form-create-section title {
   height: 111.45px;
+  position:relative;
   background-color: #ffd972;
   /* text-decoration:  3px  underline #000000; */
-  margin-bottom: 20px;
+  margin-bottom: 120px;
   border: 1px solid;
   padding: 10px;
   background: linear-gradient(#000, #000) center bottom 5px/calc(100% - 10px) 2px no-repeat;
   color: black;
   width: 980.16px;
-  border: none;
+ 
 }
 
 .form-create input {
@@ -565,23 +608,24 @@ color: #000000;
   width: 80%;
   margin: 0;
   /* background-color: #EFA7A7; */
-  bottom: 0px;
+  bottom: 80px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   /* border: none;
   */
 }
 
-input.create-btn {
+.create-btn {
   height: 52px;
   width: 422px;
   border-radius: 25px;
   background-color: #EFA7A7;
-
+bottom: 400px;
   text-decoration: none;
-
+position: relative;
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
 
   display: flex;
@@ -589,8 +633,7 @@ input.create-btn {
   justify-content: space-evenly;
   border: none;
 
-  margin: 0px ;
-  
+  margin-left: 80px;
 
   margin: 410px;
 
@@ -656,7 +699,7 @@ label {
   height: 36.2px;
   width: 110px;
   position: relative;
-   bottom: 110px; 
+   bottom: 120px; 
   border-radius: 25px;
   background-color: #EFA7A7;
   box-shadow: 5px 10px 5px #00000029;
@@ -671,10 +714,9 @@ label {
   margin-left: 840px;
   /* z-index:3; */
 
-  margin-left: 900px;
+  
 
 }
-
 
 .custom-file-upload {
   height: 36.2px;
@@ -692,10 +734,10 @@ label {
 
   z-index: 8;
 }
-
+/* 
 .clone-wrapper {
   
-}
+} */
 
 .form-create-section-title{
   font: normal normal normal 20px/24px "Lato" Black;
@@ -706,16 +748,94 @@ letter-spacing: 2px;
 
 
 #imgPreview{
-  bottom: 180px;
+  display: none;
+  bottom: 8px;
   position: relative;
- outline:#fff;
-
-  
+ border: none;
+ height:40px;
+ width: 40px;
 
 }
+#imgPreview:active{
+ 
+  bottom: 8px;
+  position: relative;
+ border: none;
+ height:40px;
+ width: 40px;
 
+}
+.jquery-upload-form{
+  right: 1040px;
+  position: relative;
 
-@media all, screen  and (min-width: 375px) {
+}
+.add-input-text{
+  padding: 240px;
+  position: relative;
+}
+
+@media screen and (max-width: 370px) {
+  
+  .create-wrapper form{
+  position: relative;
+  flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding-left: 40px;
+    width: 500px;
+  /* bottom: 40em; */
+  
+    align-content: center;
+  }
+  .create-wrapper input{
+    width: 300px;
+  }
+ .create-btn{
+  width: 40px;
+  right: 80px;
+  position: relative;
+ }
+ .form-create-title{
+  width:300px;
+  padding-left: 40px;
+ }
+   
+}
+
+@media screen and (max-width: 500px) {
+  
+  .create-wrapper form{
+  position: relative;
+  flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding-left: 40px;
+    width: 200px;
+  /* bottom: 40em; */
+  
+    align-content: center;
+  }
+  .create-wrapper input{
+    width: 500px;
+  }
+ .create-btn{
+  width: 40px;
+  right: 80px;
+  position: relative;
+ }
+ .form-create-title{
+  width:300px;
+  padding-left: 40px;
+
+ }
+
+ 
+}
+   
+/* @media all, screen  and (min-width: 375px) {
    .create-recipe-form {
     width: 1em;
     max-height: 15em;
@@ -731,17 +851,17 @@ letter-spacing: 2px;
     align-items: left;
     justify-content: left;
     text-align: center;
-    /* margin-right: 200px; */
-  } 
+    /* margin-right: 200px;} */
+    
 
 @media screen and (max-width: 950px) {
   .create-wrapper input {
-    display: flex;
+  
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 40%;
+   
   }
 }
 
@@ -749,59 +869,31 @@ letter-spacing: 2px;
 
 @media screen and (width: 1920px) {
   .create-wrapper  {
-    top: 20%;
-    right: 37%;
+    width: 40%;
   }
 }
-@media screen and (max-width: 1280px) {
-  .home-wrapper .circles-container {
+@media screen and (max-width: 637px) {
+  .create-wrapper form {
+    position: relative;
     min-height: 100%;
-    width: 100%;
-    display: flex;
+    max-width: 650px;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 60px;
+    margin-left: 260px;
   }
-  .home-wrapper .circles-container .home-circle-one {
-    min-height: 300px;
-    width: 300px;
+  .form-create-title{
+    margin-left: 240px;
   }
-  .home-wrapper .circles-container .home-circle-two {
-    min-height: 120px;
-    width: 120px;
-    margin-top: 80px;
+  .add-input-text{
+    padding: 240px;
+    position: relative;
   }
+
+ 
+ 
 }
-@media screen and (max-width: 768px) {
-  .home-wrapper .circles-container .home-circle-one {
-    min-height: 250px;
-    width: 250px;
-  }
-  .home-wrapper .circles-container .home-circle-two {
-    min-height: 100px;
-    width: 100px;
-    margin-top: 80px;
-  }
-  .home-wrapper .circles-container .home-circle-two .circle-two-text-container {
-    min-height: 50px;
-    width: 90px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home-wrapper .circles-container .home-circle-one {
-    min-height: 200px;
-    width: 200px;
-  }
-  .home-wrapper .circles-container .home-circle-two {
-    min-height: 100px;
-    width: 100px;
-    margin-top: 120px;
-  }
-  .home-wrapper .circles-container .home-circle-two .circle-two-text-container {
-    min-height: 50px;
-    width: 90px;
-  }
-}
+
 
 
 
@@ -1388,5 +1480,3 @@ color: #000000;
     justify-content: space-evenly;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

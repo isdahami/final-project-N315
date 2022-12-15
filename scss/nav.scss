@@ -23,10 +23,12 @@ nav .logo {
   width: 167px;
   margin-left: 50px;
 }
+
 nav .logo img {
   min-height: 55px;
   width: 167px;
 }
+
 nav .links {
   width: 50%;
   display: flex;
@@ -34,21 +36,24 @@ nav .links {
   justify-content: space-evenly;
   margin-right: 50px;
 }
+
 nav .links a {
   text-decoration: none;
   font-family: "Lato-Regular";
   font-size: 25px;
   color: #000;
 }
+
 nav .links a:hover {
   border-bottom: 2px solid #000;
 }
+
 nav .links .login {
   height: 50px;
   width: 150px;
   border-radius: 25px;
   background-color: #ffd972;
-  box-shadow: 5px 10px 5px #00000029;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -70,6 +75,7 @@ nav .links .login {
     font-size: 20px;
     padding: 0px 5px;
   }
+  
 }
 @media screen and (max-width: 500px) {
   nav {
@@ -93,10 +99,21 @@ nav .links .login {
     margin-top: 20px;
   }
   nav .links {
-    padding: 0px 50px;
+    padding: 0px 80px;
   }
   nav .links a {
-    font-size: 20px;
-    padding: 0px 15px;
+    font-size: 15px;
+    padding:0px 5px;
+    flex-wrap: wrap;
+  }
+  nav .links .login {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #ffd972;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1607843137);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

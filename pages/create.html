@@ -8,7 +8,7 @@
                
                 <h1 class="form-create-title">Hey Michael, create your recipe!</h1>
             </div>
-                    <div class="recipe" action="##yourRecipe">
+                    <div class="recipe" action="#yourRecipe">
                         <div class=" recipe-input">
                             <form id="jquery-upload-form" enctype="multipart/form-data" accept="image/png, image/jpeg" value="Attach file"  action="upload.php">
                                 
@@ -18,26 +18,26 @@
             
                                 
                         
-                            </form>
+                           
                        
                     
                         <div class="input">
-                            <input type="text" placeholder="Recipe Name" class="add-input-text">
+                            <input type="text" id="name" placeholder="Recipe Name" class="add-input-text">
                             
                         </div>
                         <div class=" input">
-                            <input type="description" placeholder="Recipe Description" class="add-input-text">
+                            <input type="description" placeholder="Recipe Description" id="description" class="add-input-text">
                         </div>
 
                         <div class=" input">
-                            <input type="text" placeholder="Recipe Total Time" class="add-input-text">
+                            <input id="time"type="text" placeholder="Recipe Total Time" class="add-input-text">
                            
                         </div>
                         <div class=" input">
-                            <input type="size" placeholder="Recipe Serving Size" class="add-input-text">
-                        </div>
+                            <input type="size" placeholder="Recipe Serving Size"  id="size" class="add-input-text">
+                        </div></form>
                      </div>
-                </div>
+                </div> 
                         <br/><br/>
                 
 
@@ -71,15 +71,15 @@
                         <h4 class="form-create-section-title">Enter Instructions:</h4>
                     </div>
                     <div class=" input">
-                        <input type="texty" placeholder="Ingredients #1" class="add-input">
+                        <input type="texty" placeholder="Ingredients #1" class="add-input" id="step4">
                     </div>
 
                     <div class="form input">
-                        <input type="text" id="instructions" placeholder="Ingredients #2" class="add-input">
+                        <input type="text"  placeholder="Ingredients #2" class="add-input" id="step5">
                         
                     </div>
                     <div  class="clones">
-                        <input type="textarea" id="instructions" placeholder="Ingredients #3" class="add-input">
+                        <input type="textarea" id="instructions" placeholder="Ingredients #3" class="add-input" >
     
                     </div>
                     <div type="button"  class="addBtn">     
@@ -88,9 +88,9 @@
                 </section>
                     <br/><br/>
               <div>                
-                <input href="#yourRecipe"class="create-btn"type="submit" onClick="this.form.target='_blank;'" 
-                value="Create Recipe" id="submit" class="hidden btn btn-primary pull-right">
-                    
+                <button href="#yourRecipe"class="create-btn"type="submit"  placeholder="Create Recipe"
+                value="Create Recipe" id="submit" >Create Recipe</button>
+                    <div id="response" class="alert alert-sussess"></div>
                 </div>
                 
                

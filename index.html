@@ -11,7 +11,7 @@
 
     <nav>
       <div class="logo">
-        <img src="images/logo.svg" alt="logo">
+        <img src="images/logo.svg" alt="logo" class="btn-toggle-nav">
       </div>
       
       <div class="links">
@@ -63,7 +63,35 @@
   }
   </script>
 
+<script>// added submit funciton for the create page here 
+  window.addEventListener("click", () => {
+ $(".create-btn").click( (e)=> {
 
+      var recipe = $("#name").val();
+      var desc = $("#description").val();
+      var time = $("#time").val();
+      var size = $("#size").val();
+       var ingr = $(["#step1","#step2","#step3" ]).val();
+        var instructions = $(["#step4","#step5","#instructions"]).val();
+   
+  //  call ajax to recieve call
+  $("#yourRecipe").html( {
+      name:recipe,
+      description:desc,
+      time:time,
+      size:size,
+      ingredients: ingr,
+      instructions: instructions
+
+
+  } ,function(response) {
+      // respond to alert
+      $("response").html("<div id=e'response' class='alert alert-sussess'>"+response.message+"</div>")
+      clearField(); 
+  });
+  
+      alert("Your Recipe is saved ");
+       });});</script>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="lib/jquery-3.6.1.min.js"></script>

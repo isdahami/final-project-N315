@@ -2,8 +2,32 @@ import * as MODEL from "./model.js";
 
 
 
+function img_pathUrl(input){
+    $('#imgPreview')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+    filePreview(this);
+}
 
-function InitListener(){
+// function initSubmitListenr(){
+//     $("submit").on("click", function (e)){
+//         console.log("submit");
+//     };
+// }
+var input = ("#file");
+var imgInput = document.querySelector('input');
+var imgEl = document.querySelector('#imgPreview');
+if (imgEl){
+(imgInput).addEventListener('change', () => {
+  if (imgInput.files && imgInput.files[0]) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      imgEl.src = e.target.result;
+    }
+    reader.readAsDataURL(imgInput.files[0]);
+  }
+})}
+//add button code
+
+function InitListener(){ 
     $(document).ready(()=> {
           var ingCnt = 3;
           var stepCnt = 3;
@@ -32,17 +56,7 @@ function InitListener(){
               stepCnt++; 
         }
       });
-      
-      $("submit").on("click",(e)=>
-    {let recipe = {
-        description:"",
-        steps: [],
-        ingredients: [],
-        
-    };
-        
-
-        e.preventDefault();
+    
         $(".recipe .clone").each(idx,step => {
             console.log(step.value);
             recipe.steps.push({step: step.value});
@@ -57,8 +71,12 @@ function InitListener(){
         console.log("submit");
 
       });
-    });
-}
+    
+    };
+        
+    
+        
+
 
 function route() {
     // gets hashtag and name after
@@ -98,12 +116,12 @@ function initSubmitListeners() {
       if (!em || !cp || !cfp == "") {
         alert("you must respond to all fields");
       } else {
-        let userObj = {
+        let userObject = {
           email: em,
           createPassword: cp,
           confirmPassword: cfp,
         };
-        MODEL.setUserInfo(userObj);
+        MODEL.setUserInfo(userObject);
         alert("You are logged in ");
       }
     });
@@ -126,8 +144,10 @@ function initSubmitListeners() {
         }
       }
     });
-  }
+}
 
+     
+  
 
 // function that deletes a recipe, it's currently deleting buttons on other pages so commented out...
 // function deleteRepBtn() {
@@ -146,6 +166,7 @@ function initApp() {
    
 }
 
+
 $(document).ready(function () {
     initApp();
 
@@ -156,4 +177,7 @@ $(document).ready(function () {
 
 });
 
-
+// document.addEventListener("DOMContentLoaded", ()=>{
+//     img_pathUrl();
+    
+// });

@@ -22,4 +22,5 @@ Oluwatishe Elesinnla
 - styled the browse page 
 - styled the login page 
 - styled the create recipe page 
-- worked on js 
+- worked on js and nav js 
+Initally the buttons were supposed to work but I ran into some issues with that. Als oI wasn't able to get the data to submit to the yourRecipe page. I nclusded the code for the add buttons, as well but I wasn't able to get it to work

@@ -60,7 +60,11 @@ export function changePage(pageID, subPage ) {
 //     $("#submit").addClass('hidden');
 //   }
 // });
+export function setUserInfo(userData) {
+  userInfo = userData;
 
+  console.log(userInfo);
+}
 
 
 
@@ -81,8 +85,8 @@ export function changePage(pageID, subPage ) {
 //       // $("#nav").html(data);
 // });
 // };
-export function setUserInfo(userObject) {
-  userInfo = userObject;
+export function setUserInfo1(userObj) {
+  userInfo = userObj;
   userSignedIn = true;
   console.log(userInfo);
 }
